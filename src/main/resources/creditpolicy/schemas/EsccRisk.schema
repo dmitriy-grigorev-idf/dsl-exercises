@@ -1,0 +1,25 @@
+package creditpolicy.schema
+
+import java.time.LocalDate
+
+import static com.mm.escc.risk.context.model.EsccBureauName.MM_CALCULATED_FIELDS
+import static com.mm.escc.risk.context.model.EsccRiskActionType.BORROWER
+
+schema() with {
+
+  ref("borrower", BORROWER) {
+    [
+        birthday          : type(LocalDate)
+    ]
+  }
+
+  bureau("mmCalculatedFields", MM_CALCULATED_FIELDS) {
+    [
+        userCreditHistory: bean([
+            credits                                   : list([
+                status : type(String)
+            ])
+        ])
+    ]
+  }
+}

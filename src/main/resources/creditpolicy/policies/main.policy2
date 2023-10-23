@@ -1,0 +1,11 @@
+import com.mm.core.dsl.script.engine.schema.model.RuleName
+
+import static com.mm.escc.risk.context.model.EsccCreditPolicyVersion.MAIN
+
+enum MainPolicyRuleNames implements RuleName {
+
+}
+
+spec MAIN with {
+  // TODO: Write rules from exercises
+}

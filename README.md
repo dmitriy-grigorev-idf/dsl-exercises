@@ -9,6 +9,10 @@ Credit policy files are stored in the src/main/resources/creditpolicy directory:
 - decision causes are in /dictionary directory
 - CP schema is in /schemas directory
 
+## Working with exercises
+To start working with these exercises, you need to clone them on your local computer and import the project into Idea. There is no code highlighting because there is no access to the dependency projects to download them.
+If you need to review your code, you will need to create a pull request in this project.
+
 ## Exercises
 ### 1. Checking Age
 Write a rule that checks the age of the borrower. The age must be greater than or equal to 18 and less than or equal to 80, otherwise the rule must fire an "AGE" decision cause with status
